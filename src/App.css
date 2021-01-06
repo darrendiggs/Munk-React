@@ -2,15 +2,17 @@
   font-family: 'Maven Pro', sans-serif;
 }
 
-.bolder{
+h1 {
   font-weight: bolder;
 }
 
-/* .contentImg {
+
+
+.contentImg {
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
-} */
+}
 
 .row-content {
   padding-top: 3rem;
@@ -18,21 +20,21 @@
 }
 
 
-/* .jumbotron {
+.jumbotron {
   background-repeat: no-repeat;
   background-size: cover;
   height: 20rem;
-  background-image: url(imgs/gallerybanner.jpg);
-} */
+  /* background-image: url(/Users/darrendiggs/Desktop/Munk/public/imgs/gallerybanner.jpg); */
+}
 
-/* .btn {
- background-color: #cf7425; 
-} */
+Button {
+ color: #cf7425; 
+}
 
-/* footer {
+footer {
   margin-top: 5rem;
-  background-image: url(imgs/brushshapes.jpg);
-} */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Brushtypes.jpg/600px-Brushtypes.jpg);
+}
 
 .hr {
   border: 1px solid #cf7425;
@@ -44,20 +46,20 @@
   width: auto;
 } */
 
-/* ul {
+ul {
   list-style-type: none;
-} */
+}
 
 .galleryImg{
   margin-top: 2rem;
   height: auto;
   width: auto;
 }
-/* 
+
 .newsLetter {
   margin-top: 5rem;
 } 
-
+/* 
 #suppliesNav {
   padding-top: 2rem;
   padding-bottom: 2rem;
@@ -102,7 +104,7 @@
 }
 
 .suppliesImg {
-  height: 250px;
+  height: 250px !important;
   width: auto;
 }
 

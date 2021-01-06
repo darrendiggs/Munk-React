@@ -1,16 +1,18 @@
 
-import './App.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
-import GalleryContainer from './components/gallery';
-import Header from './components/header';
+
+import { BrowserRouter } from 'react-router-dom';
+import Main from './components/main';
+
+
 
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App body">
-      <Header />
-      <GalleryContainer />
+        <Main />
     </div>
+</BrowserRouter>
   );
 }
 
