@@ -1,34 +1,8 @@
 
 
-import '../App.css';
-import React, { Component } from 'react';
-import { BRUSHES } from '../Data/suppliesData';
-import { PAINTS } from '../Data/suppliesData';
-import { CANVAS } from '../Data/suppliesData';
-import { EASELS } from '../Data/suppliesData';
+      function SuppliesContainer(props) {
 
-
-
-
-
-class SuppliesContainer extends Component {
-
-    constructor(props) {
-        super(props);
-        this.state = {
-            brushes: BRUSHES,
-            paints: PAINTS,
-            canvas: CANVAS,
-            easels: EASELS
-        };
-    }
-
- 
-    render() {
-
-      
-
-            const brushProducts = this.state.brushes.map(brush => {
+            const brushProducts = props.brushes.map(brush => {
                 return (
                     <div>
 
@@ -53,7 +27,7 @@ class SuppliesContainer extends Component {
            
      
 
-            const paintProducts = this.state.paints.map(paint => {
+            const paintProducts = props.paints.map(paint => {
                 return (
                     <div>
 
@@ -79,7 +53,7 @@ class SuppliesContainer extends Component {
 
  
 
-            const canvasProducts = this.state.canvas.map(canvas => {
+            const canvasProducts = props.canvas.map(canvas => {
                 return (
                     <div>
 
@@ -103,7 +77,7 @@ class SuppliesContainer extends Component {
             });
    
 
-            const easelProducts = this.state.easels.map(easel => {
+            const easelProducts = props.easels.map(easel => {
                 return (
                     <div>
 
@@ -183,7 +157,7 @@ class SuppliesContainer extends Component {
             </div>
         );
     }
-}
+
 
 
 export default SuppliesContainer;

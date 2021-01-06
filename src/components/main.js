@@ -9,10 +9,31 @@ import Newsletter from '../components/newsletter';
 import SuppliesContainer from '../components/supplies';
 import 'bootstrap-social/bootstrap-social.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
+import { Component } from 'react';
+import { GALLERY } from '../Data/galleryData';
+
+import { BRUSHES } from '../Data/suppliesData';
+import { PAINTS } from '../Data/suppliesData';
+import { CANVAS } from '../Data/suppliesData';
+import { EASELS } from '../Data/suppliesData';
 
 
+class Main extends Component {
 
-function Main() {
+  constructor(props) {
+    super(props);
+    this.state = {
+        gallery: GALLERY,
+        brushes: BRUSHES,
+        paints: PAINTS,
+        canvas: CANVAS,
+        easels: EASELS
+    };
+}
+render(){
+
+
+  
   return (
     <div >
 
@@ -21,9 +42,18 @@ function Main() {
 
         <Route exact path='/home' component={Home} />
 
-        <Route exact path='/gallery' component={GalleryContainer} />
+        <Route exact path='/gallery' render={() => <GalleryContainer gallery={this.state.gallery} />} />
 
-        <Route exact path='/supplies' component={SuppliesContainer} />
+        <Route exact path='/supplies' render={() => 
+          <SuppliesContainer 
+            brushes={this.state.brushes}
+            paints={this.state.paints}
+            canvas={this.state.canvas}
+            easels={this.state.easels}
+          />} 
+        />
+
+        {/* <Route exact path='/supplies' component={SuppliesContainer} /> */}
 
         <Redirect to='/home' />
 
@@ -34,5 +64,5 @@ function Main() {
     </div>
   );
 }
-
+}
 export default Main;
