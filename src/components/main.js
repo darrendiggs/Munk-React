@@ -8,6 +8,7 @@ import Home from '../components/home';
 import Newsletter from '../components/newsletter';
 import SuppliesContainer from '../components/supplies';
 import 'bootstrap-social/bootstrap-social.css';
+import { Switch, Route, Redirect } from 'react-router-dom';
 
 
 
@@ -16,12 +17,18 @@ function Main() {
     <div >
 
       <Header />
+      <Switch>
 
-      <Home />
+        <Route exact path='/home' component={Home} />
+
+        <Route exact path='/gallery' component={GalleryContainer} />
+
+        <Route exact path='/supplies' component={SuppliesContainer} />
+
+        <Redirect to='/home' />
+
+      </Switch>
       <Newsletter />
-      <GalleryContainer />
-      <SuppliesContainer />
-
       <Footer />
       
     </div>

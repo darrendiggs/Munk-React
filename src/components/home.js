@@ -59,7 +59,7 @@ class Home extends Component {
                 <div className="row row-content">
                     <div className="col-sm contentImg order-sm-last">
                         <img className="img-fluid" id="munkOfTheWeek"
-                            // src=
+                            src="https://www.biography.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTM3NTk5OTY0Mjc5NzQzNzMw/vincent_van_gogh_self_portrait_painting_musee_dorsay_via_wikimedia_commons_promojpg.jpg"
                             alt="Munk of the Week" />
                     </div>
 
