@@ -14,7 +14,7 @@ function Newsletter(props) {
 
 <div className="d-flex justify-content-center">
   <input type="email" className="form-control w-50" placeholder="Enter email" />
-  <Button className="btn w-25 form-control">Join</Button>
+  <button className="btn w-25 form-control">Join</button>
 </div>
 <small className="form-text text-muted ">We'll never share your email with anyone else.</small>
 </div>

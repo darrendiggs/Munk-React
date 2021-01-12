@@ -1,12 +1,14 @@
 
 
+import brush from '../Data/imgs/brush-ultra-wide.jpg'
+import art from '../Data/imgs/art1.jpg'
 import React, { Component } from 'react';
 import { Button } from 'reactstrap';
 import { GALLERY } from '../Data/galleryData';
 
 
 class Home extends Component {
-    constructor(props){
+    constructor(props) {
         super(props);
         this.state = {
             gallery: GALLERY
@@ -19,16 +21,16 @@ class Home extends Component {
 
                 <div className="row-content">
                     <div className="jumbotron d-flex align-items-center" >
-                        <a className="ml-auto" href="gallery.html"><Button className="ml-auto btn" >View Gallery</Button></a>
+                        <button className="ml-auto btn" >View Gallery</button>
                     </div>
                 </div>
 
-                <hr className="hr"/>
+                <hr className="hr" />
 
                 <div className="row row-content">
                     <div className="col-sm contentImg">
                         <img className="img-fluid"
-                            src="https://www.liquitex.com/us/wp-content/uploads/sites/42/2018/10/4701-460x460.jpg"
+                            src={brush}
                             alt="Munk Brush" />
                     </div>
 
@@ -54,12 +56,12 @@ class Home extends Component {
                             </div>
                         </div> */}
 
-                <hr className="hr"/>
+                <hr className="hr" />
 
                 <div className="row row-content">
                     <div className="col-sm contentImg order-sm-last">
                         <img className="img-fluid" id="munkOfTheWeek"
-                            src="https://www.biography.com/.image/c_fit%2Ccs_srgb%2Cfl_progressive%2Cq_auto:good%2Cw_620/MTM3NTk5OTY0Mjc5NzQzNzMw/vincent_van_gogh_self_portrait_painting_musee_dorsay_via_wikimedia_commons_promojpg.jpg"
+                            src={art}
                             alt="Munk of the Week" />
                     </div>
 
@@ -70,7 +72,7 @@ class Home extends Component {
                     </div>
                 </div>
 
-                <hr className="hr"/>
+                <hr className="hr" />
 
             </div>
 

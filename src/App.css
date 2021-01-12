@@ -24,16 +24,26 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 20rem;
-  /* background-image: url(/Users/darrendiggs/Desktop/Munk/public/imgs/gallerybanner.jpg); */
+  background-image: url(../src/Data/imgs/gallerybanner.jpg);
 }
 
 Button {
- color: #cf7425; 
-}
+  background-color: #cf7425!important; 
+ }
+
+.btn {
+  background-color: #cf7425; 
+ }
 
 footer {
+  padding: 2rem;
   margin-top: 5rem;
-  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Brushtypes.jpg/600px-Brushtypes.jpg);
+  background-image: url(../src/Data/imgs/brushshapes.jpg);
+}
+.footercontainer{
+  width: 25%;
+  background: white;
+  border-radius: 20%;
 }
 
 .hr {

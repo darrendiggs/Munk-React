@@ -1,5 +1,5 @@
 
-
+import logo from '../Data/imgs/logo.png'
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom'
@@ -30,7 +30,7 @@ class Header extends Component {
         <NavbarBrand>
             <img className="mobile-logo"
               width="100"
-              src="https://www.freelogodesign.org/file/app/client/thumb/4fed2a34-40ef-4c50-86c5-9e403c9d1af1_200x200.png?1604544227089"
+              src={logo}
               alt="Munk Logo" />
           </NavbarBrand>
 
@@ -50,10 +50,10 @@ class Header extends Component {
             </Nav>
             
 
-          <NavbarBrand>
+          <NavbarBrand to="/home">
             <img className="img-fluid desktop-logo"
               width="500"
-              src="https://www.freelogodesign.org/file/app/client/thumb/4fed2a34-40ef-4c50-86c5-9e403c9d1af1_200x200.png?1604544227089"
+              src={logo}
               alt="Munk Logo" />
           </NavbarBrand>
 

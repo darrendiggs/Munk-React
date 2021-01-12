@@ -11,7 +11,8 @@ import 'bootstrap-social/bootstrap-social.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { Component } from 'react';
 import { GALLERY } from '../Data/galleryData';
-
+import 'font-awesome/css/font-awesome.css';
+import 'bootstrap-social/bootstrap-social.css';
 import { BRUSHES } from '../Data/suppliesData';
 import { PAINTS } from '../Data/suppliesData';
 import { CANVAS } from '../Data/suppliesData';
@@ -52,8 +53,6 @@ render(){
             easels={this.state.easels}
           />} 
         />
-
-        {/* <Route exact path='/supplies' component={SuppliesContainer} /> */}
 
         <Redirect to='/home' />
 
