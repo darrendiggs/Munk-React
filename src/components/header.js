@@ -3,19 +3,19 @@ import logo from '../Data/imgs/logo.png'
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
 import { NavLink } from 'react-router-dom'
+import { Fade } from 'react-animation-components';
 
 class Header extends Component {
 
   constructor(props) {
     super(props);
 
-    this.toggleNav = this.toggleNav.bind(this);
     this.state = {
       isNavOpen: false
     };
   }
 
-  toggleNav() {
+  toggleNav = () => {
     this.setState({
       isNavOpen: !this.state.isNavOpen
     });
@@ -24,55 +24,58 @@ class Header extends Component {
   render() {
     return (
       <>
+        <Fade in>
+          <Navbar className="nav navbar-light nav-justified" expand="sm" >
 
-        <Navbar className="nav navbar-light nav-justified" expand="sm" >
+            <Fade in>
+              <NavbarBrand>
+                <img className="mobile-logo"
+                  width="100"
+                  src={logo}
+                  alt="Munk Logo" />
+              </NavbarBrand>
+            </Fade>
 
-        <NavbarBrand>
-            <img className="mobile-logo"
-              width="100"
-              src={logo}
-              alt="Munk Logo" />
-          </NavbarBrand>
+            <NavbarToggler onClick={this.toggleNav} />
+            <Collapse isOpen={this.state.isNavOpen} navbar>
 
-          <NavbarToggler onClick={this.toggleNav} />
-          <Collapse isOpen={this.state.isNavOpen} navbar>
+              <Nav className="navbar-nav mx-auto w-100">
 
-            <Nav className="navbar-nav mx-auto w-100">
+                <NavItem className="my-auto" >
+                  <NavLink className="nav-link" to="/home" >Home </NavLink>
+                </NavItem>
 
-              <NavItem className="my-auto" >
-                <NavLink className="nav-link" to="/home" >Home </NavLink>
-              </NavItem>
+                <NavItem className="my-auto" >
+                  <NavLink className="nav-link" to="/gallery" >Gallery </NavLink>
+                </NavItem>
 
-              <NavItem className="my-auto" >
-                <NavLink className="nav-link" to="/gallery" >Gallery </NavLink>
-              </NavItem>
-              
-            </Nav>
-            
+              </Nav>
+              <Fade in>
+                <Fade in>
+                  <NavbarBrand to="/home">
+                    <img className="img-fluid desktop-logo"
+                      width="650"
+                      src={logo}
+                      alt="Munk Logo" />
+                  </NavbarBrand>
+                </Fade>
+              </Fade>
 
-          <NavbarBrand to="/home">
-            <img className="img-fluid desktop-logo"
-              width="500"
-              src={logo}
-              alt="Munk Logo" />
-          </NavbarBrand>
+              <Nav className="navbar-nav mx-auto w-100">
 
+                <NavItem className="my-auto" >
+                  <NavLink className="nav-link" to="/framing" >Framing </NavLink>
+                </NavItem>
 
-          <Nav className="navbar-nav mx-auto w-100">
+                <NavItem className="my-auto" >
+                  <NavLink className="nav-link" to="/supplies" >Supplies </NavLink>
+                </NavItem>
 
-            <NavItem className="my-auto" >
-              <NavLink className="nav-link" to="/framing" >Framing </NavLink>
-            </NavItem>
+              </Nav>
 
-            <NavItem className="my-auto" >
-              <NavLink className="nav-link" to="/supplies" >Supplies </NavLink>
-            </NavItem>
-
-          </Nav>
-
-          </Collapse>
-        </Navbar>
-
+            </Collapse>
+          </Navbar>
+        </Fade>
 
       </>
     );

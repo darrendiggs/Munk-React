@@ -10,7 +10,6 @@ import SuppliesContainer from '../components/supplies';
 import 'bootstrap-social/bootstrap-social.css';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { Component } from 'react';
-import { GALLERY } from '../Data/galleryData';
 import 'font-awesome/css/font-awesome.css';
 import 'bootstrap-social/bootstrap-social.css';
 import { BRUSHES } from '../Data/suppliesData';
@@ -24,7 +23,6 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        gallery: GALLERY,
         brushes: BRUSHES,
         paints: PAINTS,
         canvas: CANVAS,
@@ -43,7 +41,7 @@ render(){
 
         <Route exact path='/home' component={Home} />
 
-        <Route exact path='/gallery' render={() => <GalleryContainer gallery={this.state.gallery} />} />
+        <Route exact path='/gallery' component={GalleryContainer} />
 
         <Route exact path='/supplies' render={() => 
           <SuppliesContainer 
