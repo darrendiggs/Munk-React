@@ -1,7 +1,8 @@
 
 import { Component } from 'react';
-import { Modal, ModalHeader, ModalBody, Fade } from 'reactstrap';
+import { Modal, ModalBody, Fade } from 'reactstrap';
 import { GALLERY } from '../Data/galleryData';
+import Like from '../components/like';
 
 class GalleryContainer extends Component {
 
@@ -28,14 +29,13 @@ class GalleryContainer extends Component {
                 <>
                     <div className="col-sm-6 col-md-4 col-lg-3 my-auto galleryImg text-center" >
                         <img className="img-fluid" src={subs.img} alt="art" onClick={() => this.openModal(subs.id)}/> <br/>
-                        {subs.title}
+                        <Like className="like"/>
                     </div>
 
                     <Modal isOpen={this.state.openedModal === subs.id} toggle={this.closeModal} className="text-center">
-                        <ModalHeader toggle={this.toggleModal}>{subs.title}</ModalHeader>
                         <ModalBody>
                             <img className="img-fluid" src={subs.img} alt="art" /> <br/>
-                            By - {subs.artist} <br/>
+                            {subs.title} - {subs.artist} <br/>
                             {subs.description}
                         </ModalBody>
                     </Modal>

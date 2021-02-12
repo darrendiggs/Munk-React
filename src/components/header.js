@@ -41,11 +41,11 @@ class Header extends Component {
 
               <Nav className="navbar-nav mx-auto w-100">
 
-                <NavItem className="my-auto" >
+                <NavItem className="my-auto navText" >
                   <NavLink className="nav-link" to="/home" >Home </NavLink>
                 </NavItem>
 
-                <NavItem className="my-auto" >
+                <NavItem className="my-auto navText" >
                   <NavLink className="nav-link" to="/gallery" >Gallery </NavLink>
                 </NavItem>
 
@@ -63,11 +63,11 @@ class Header extends Component {
 
               <Nav className="navbar-nav mx-auto w-100">
 
-                <NavItem className="my-auto" >
+                <NavItem className="my-auto navText" >
                   <NavLink className="nav-link" to="/framing" >Framing </NavLink>
                 </NavItem>
 
-                <NavItem className="my-auto" >
+                <NavItem className="my-auto navText" >
                   <NavLink className="nav-link" to="/supplies" >Supplies </NavLink>
                 </NavItem>
 
