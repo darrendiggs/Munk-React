@@ -16,6 +16,7 @@ import { BRUSHES } from '../Data/suppliesData';
 import { PAINTS } from '../Data/suppliesData';
 import { CANVAS } from '../Data/suppliesData';
 import { EASELS } from '../Data/suppliesData';
+import NameForm from './framing';
 
 
 class Main extends Component {
@@ -23,43 +24,45 @@ class Main extends Component {
   constructor(props) {
     super(props);
     this.state = {
-        brushes: BRUSHES,
-        paints: PAINTS,
-        canvas: CANVAS,
-        easels: EASELS
+      brushes: BRUSHES,
+      paints: PAINTS,
+      canvas: CANVAS,
+      easels: EASELS
     };
-}
-render(){
+  }
+  render() {
 
 
-  
-  return (
-    <div >
 
-      <Header />
-      <Switch>
+    return (
+      <div >
 
-        <Route exact path='/home' component={Home} />
+        <Header />
+        <Switch>
 
-        <Route exact path='/gallery' component={GalleryContainer} />
+          <Route exact path='/home' component={Home} />
 
-        <Route exact path='/supplies' render={() => 
-          <SuppliesContainer 
-            brushes={this.state.brushes}
-            paints={this.state.paints}
-            canvas={this.state.canvas}
-            easels={this.state.easels}
-          />} 
-        />
+          <Route exact path='/gallery' component={GalleryContainer} />
 
-        <Redirect to='/home' />
+          <Route exact path='/supplies' render={() =>
+            <SuppliesContainer
+              brushes={this.state.brushes}
+              paints={this.state.paints}
+              canvas={this.state.canvas}
+              easels={this.state.easels}
+            />}
+          />
 
-      </Switch>
-      <Newsletter />
-      <Footer />
-      
-    </div>
-  );
-}
+          <Route exact path='/framing' component={NameForm} />
+
+          <Redirect to='/home' />
+
+        </Switch>
+        <Newsletter />
+        <Footer />
+
+      </div>
+    );
+  }
 }
 export default Main;

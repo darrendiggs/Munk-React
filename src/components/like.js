@@ -15,7 +15,7 @@ class Like extends Component {
       };
 
     render() {
-      return <p className="btn" onClick={() => this.addLike()}> ♥︎  {this.state.likes}</p>;
+      return <p onClick={() => this.addLike()}> ♥︎  {this.state.likes}</p>;
     }
   }
   
