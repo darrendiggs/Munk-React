@@ -1,9 +1,10 @@
 
 
 import { Component } from 'react';
-import { Col, Row, Button, Form, FormGroup, FormText, Input } from 'reactstrap';
+import FrameCarousel from '../components/framingCarousel';
+import { Col, Row, Button, Form, FormGroup, FormText, Input, Fade } from 'reactstrap';
 
-class framingForm extends Component {
+class Framing extends Component {
 
   constructor(props) {
     super(props);
@@ -34,11 +35,50 @@ class framingForm extends Component {
 
   handleSubmit = event => {
     alert('Form Values: ' + JSON.stringify(this.state));
+    this.resetForm();
+  }
+
+  resetForm() {
+    this.setState({
+      fullName: '',
+      width: '',
+      height: '',
+      unit: '',
+      email: '',
+      material: '',
+      style: '',
+      file: '',
+      text: ''
+    });
   }
 
   render() {
     return (
       <div className="container">
+        <Fade in>
+
+        <div className="row mx-auto my-auto row-content">
+          <div className="col text-center">
+            <h1 className="bolder" >Munk Custom Framing</h1>
+            <p>With over 20 years of frame builing expirence, you can trust excellence delivered everytime.</p>
+          </div>
+        </div>
+
+        <hr className="hr" />
+
+        <div className="row-content" style={{maxWidth: "55%", margin: "auto"}} >
+          <FrameCarousel />
+        </div>
+
+        <hr className="hr " />
+
+        <div className="row mx-auto my-auto row-content">
+          <div className="col text-center">
+            <h2 className="bolder" >Describe your Project</h2>
+            <p>And we'll get started!</p>
+          </div>
+        </div>
+
         <Form>
 
           <FormGroup>
@@ -187,9 +227,10 @@ class framingForm extends Component {
           </FormText>
 
         </Form>
+        </Fade>
       </div>
     );
   }
 }
 
-export default framingForm;
+export default Framing;

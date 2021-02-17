@@ -16,7 +16,7 @@ import { BRUSHES } from '../Data/suppliesData';
 import { PAINTS } from '../Data/suppliesData';
 import { CANVAS } from '../Data/suppliesData';
 import { EASELS } from '../Data/suppliesData';
-import NameForm from './framing';
+import Framing from './framing';
 
 
 class Main extends Component {
@@ -53,7 +53,7 @@ class Main extends Component {
             />}
           />
 
-          <Route exact path='/framing' component={NameForm} />
+          <Route exact path='/framing' component={Framing} />
 
           <Redirect to='/home' />
 
