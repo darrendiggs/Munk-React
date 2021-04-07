@@ -31,7 +31,7 @@ export const BRUSHES = [
         description: 'Lopsum sectetur adipiscing elit, sed do eiusmod tempor lamagna qua.',
         alt: 'Munk Brush',
         section: 'brushes',
-        featured: false
+        featured: true
     }
 ];
     

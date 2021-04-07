@@ -28,10 +28,6 @@ Button {
   background-color: #cf7425!important; 
  }
 
-.btn {
-  background-color: #cf7425; 
- }
-
 .contact {
   background-color: black;
   opacity: 0.75;
@@ -49,8 +45,8 @@ footer {
 
 }
 
-#munkOfTheWeek {
-  height: 400px;
+.homeImg {
+  height: 400px !important;
   width: auto;
 }
 
@@ -84,6 +80,9 @@ ul {
   }
   .desktop-logo {
       display: none;
+  }
+  .hrSmall{
+    width: 75%;
   }
 
 } 

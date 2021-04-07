@@ -225,7 +225,6 @@ class Framing extends Component {
           <FormText color="muted" align="center">
             Our framing experts will get back to you within 48 hours with more details!
           </FormText>
-
         </Form>
         </Fade>
       </div>

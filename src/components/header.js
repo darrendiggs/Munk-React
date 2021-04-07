@@ -52,12 +52,14 @@ class Header extends Component {
               </Nav>
               <Fade in>
                 <Fade in>
-                  <NavbarBrand to="/home">
+                 <a href="/home">
+                   <NavbarBrand>
                     <img className="img-fluid desktop-logo"
                       width="650"
                       src={logo}
                       alt="Munk Logo" />
                   </NavbarBrand>
+                  </a> 
                 </Fade>
               </Fade>
 
