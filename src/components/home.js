@@ -6,8 +6,6 @@ import { GALLERY } from '../Data/galleryData';
 import { BRUSHES } from '../Data/suppliesData';
 import { Fade } from 'reactstrap';
 
-
-
 class Home extends Component {
   constructor(props) {
     super(props);
@@ -30,12 +28,14 @@ class Home extends Component {
             </div>
 
             <div className="col-sm my-auto text-center text-sm-right " >
-              <h2><span style={{ color: "#cf7425" }}>Munk of the Week</span></h2>
+              <h2 style={{ color: "#cf7425" }}>Munk of the Week</h2>
               <hr className="hr hrSmall" />
-              <h3>{art.artist}</h3>
-              <p>{art.title}</p>
+              <h3>{art.title}</h3>
+              <p>By - {art.artist}</p>
               <p>{art.description}</p>
-              <button className="btn ml-auto" id="btnnn" href="/gallery">View Gallery</button>
+              <button className="btn ml-auto" id="btnnn" >
+                <a style={{ color: "#000000" }} href="/gallery">View Gallery</a>
+              </button>
             </div>
           </div>
         )
@@ -53,12 +53,14 @@ class Home extends Component {
             </div>
 
             <div className="col-sm my-auto text-center text-sm-left" >
-              <h2><span style={{ color: "#cf7425" }}>New From Munk</span></h2>
+              <h2 style={{ color: "#cf7425" }}>New From Munk</h2>
               <hr className="hr hrSmall" />
               <h3>{supply.name}</h3>
-              <p>{supply.price}</p>
               <p>{supply.description}</p>
-              <button className="btn ml-auto" id="btnnn">Add to Cart</button>
+              <p>{supply.price}</p>
+              <button className="btn ml-auto" id="btnnn">
+                <a style={{ color: "#000000" }} href="/supplies">View Supplies</a>
+              </button>
             </div>
           </div>
         )
@@ -69,11 +71,13 @@ class Home extends Component {
       <div class="container">
         <Fade in>
           <div className="row-content ">
-            <p className="text-center ">
+            <p className="text-center mb-5">
               "A true artist is not one who is inspired, but one who inspires others." <br />
                     ―  Salvador Dali</p>
             <div className="jumbotron d-flex align-items-center" >
-              <button className="ml-auto btn" >View Gallery</button>
+              <button className="ml-auto btn" >
+                <a style={{ color: "#000000" }} href="/gallery">View Gallery</a>
+              </button>
             </div>
           </div>
 
