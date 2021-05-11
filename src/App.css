@@ -65,6 +65,7 @@ ul {
   margin-top: 2rem;
   height: auto;
   width: auto;
+  cursor: pointer;
 }
 
 .newsLetter {
