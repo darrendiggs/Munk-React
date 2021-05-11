@@ -1,6 +1,6 @@
 
 
-çhtml {
+html {
   scroll-behavior: smooth;
 }
 
@@ -78,7 +78,7 @@ ul {
 #suppliesNav {
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  background-image: linear-gradient(to top, rgba(255,0,0,0), white, white, white);
+  background-image: linear-gradient(to top, rgba(255,0,0,0), white, white);
 }
 
 @media (max-width: 576px){

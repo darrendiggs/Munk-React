@@ -218,7 +218,9 @@ class Framing extends Component {
               type="submit"
               className="form-control form-control-lg"
               onClick={this.handleSubmit}>
-              Submit
+              <span style={{ color: 'black' }}>
+                Submit
+              </span>
           </Button>
 
             <FormText color="muted" align="center">
