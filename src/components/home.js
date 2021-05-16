@@ -5,6 +5,7 @@ import yinYang from '../Data/imgs/yinYang.png'
 import { GALLERY } from '../Data/galleryData';
 import { BRUSHES } from '../Data/suppliesData';
 import { Fade } from 'reactstrap';
+import { NavLink } from 'react-router-dom'
 
 class Home extends Component {
   constructor(props) {
@@ -34,7 +35,12 @@ class Home extends Component {
               <p>By - {art.artist}</p>
               <p>{art.description}</p>
               <button className="btn ml-auto" id="btnnn" >
-                <a style={{ color: "#000000" }} href="/gallery">View Gallery</a>
+                <NavLink
+                  style={{ color: "#000000" }}
+                  className="nav-link"
+                  to="/gallery">
+                  Gallery
+                </NavLink>
               </button>
             </div>
           </div>
@@ -59,7 +65,12 @@ class Home extends Component {
               <p>{supply.description}</p>
               <p>{supply.price}</p>
               <button className="btn ml-auto" id="btnnn">
-                <a style={{ color: "#000000" }} href="/supplies">View Supplies</a>
+                <NavLink
+                  style={{ color: "#000000" }}
+                  className="nav-link"
+                  to="/supplies">
+                  View Supplies
+                </NavLink>
               </button>
             </div>
           </div>
@@ -76,7 +87,12 @@ class Home extends Component {
                     ―  Salvador Dali</p>
             <div className="jumbotron d-flex align-items-center" >
               <button className="ml-auto btn" >
-                <a style={{ color: "#000000" }} href="/gallery">View Gallery</a>
+                <NavLink
+                  style={{ color: "#000000" }}
+                  className="nav-link"
+                  to="/gallery">
+                  View Gallery
+                </NavLink>
               </button>
             </div>
           </div>

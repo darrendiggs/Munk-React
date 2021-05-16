@@ -4,7 +4,6 @@ html {
   scroll-behavior: smooth;
 }
 
-
 .body {
   font-family: 'Maven Pro', sans-serif;
 }
@@ -49,7 +48,6 @@ footer {
 
 .hr {
   border: 1px solid #cf7425;
-
 }
 
 .homeImg {
@@ -92,7 +90,6 @@ ul {
   .hrSmall{
     width: 75%;
   }
-
 } 
 
 @media (min-width: 576px){
@@ -102,7 +99,6 @@ ul {
   .desktop-logo {
       display: block;
   }
-
 }
 
 .suppliesImg {

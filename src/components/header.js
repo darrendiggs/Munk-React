@@ -1,4 +1,5 @@
 
+
 import logo from '../Data/imgs/logo.png'
 import React, { Component } from 'react';
 import { Nav, Navbar, NavbarBrand, NavbarToggler, Collapse, NavItem } from 'reactstrap';
@@ -52,14 +53,14 @@ class Header extends Component {
               </Nav>
               <Fade in>
                 <Fade in>
-                 <a href="/home">
+                 <NavLink to="/home">
                    <NavbarBrand>
                     <img className="img-fluid desktop-logo"
                       width="650"
                       src={logo}
                       alt="Munk Logo" />
                   </NavbarBrand>
-                  </a> 
+                  </NavLink> 
                 </Fade>
               </Fade>
 
@@ -86,4 +87,4 @@ class Header extends Component {
 
 
 
-export default Header;
+export default Header; 
