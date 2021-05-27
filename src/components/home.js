@@ -108,10 +108,10 @@ class Home extends Component {
           <hr className="hr" />
 
           <div className="row row-content">
-            <div className="col-sm contentImg">
+            <div className="col-sm my-auto">
               <img className="img-fluid rotate"
                 src={yinYang}
-                alt="Ying Yank" />
+                alt="Yin Yang" />
             </div>
 
             <div className="col-md my-auto text-center text-sm-left" >
