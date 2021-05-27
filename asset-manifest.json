@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/Munk-React/static/css/main.83e77e92.chunk.css",
+    "main.css": "/Munk-React/static/css/main.e65b7caa.chunk.css",
     "main.js": "/Munk-React/static/js/main.f10c1bd0.chunk.js",
     "main.js.map": "/Munk-React/static/js/main.f10c1bd0.chunk.js.map",
     "runtime-main.js": "/Munk-React/static/js/runtime-main.df4f7cbf.js",
@@ -12,7 +12,7 @@
     "static/js/3.25e96775.chunk.js.map": "/Munk-React/static/js/3.25e96775.chunk.js.map",
     "index.html": "/Munk-React/index.html",
     "static/css/2.3410add9.chunk.css.map": "/Munk-React/static/css/2.3410add9.chunk.css.map",
-    "static/css/main.83e77e92.chunk.css.map": "/Munk-React/static/css/main.83e77e92.chunk.css.map",
+    "static/css/main.e65b7caa.chunk.css.map": "/Munk-React/static/css/main.e65b7caa.chunk.css.map",
     "static/js/2.2f5d189d.chunk.js.LICENSE.txt": "/Munk-React/static/js/2.2f5d189d.chunk.js.LICENSE.txt",
     "static/media/art1.edb336cd.jpeg": "/Munk-React/static/media/art1.edb336cd.jpeg",
     "static/media/art10.9d810d8b.jpeg": "/Munk-React/static/media/art10.9d810d8b.jpeg",
@@ -57,7 +57,7 @@
     "static/js/runtime-main.df4f7cbf.js",
     "static/css/2.3410add9.chunk.css",
     "static/js/2.2f5d189d.chunk.js",
-    "static/css/main.83e77e92.chunk.css",
+    "static/css/main.e65b7caa.chunk.css",
     "static/js/main.f10c1bd0.chunk.js"
   ]
 }
